@@ -17,6 +17,11 @@ export default function Invoice() {
     return <Table name={data.nameText} amount={data.amount} />;
   });
 
+  let totalAmount = dataBank.reduce(
+    (acc, curr) => acc + Number(curr.amount),
+    0
+  );
+
   function handleChange(event) {
     const { name, value } = event.target;
     setData((prevData) => ({
@@ -54,6 +59,10 @@ export default function Invoice() {
         <button onClick={updateData}>Save</button>
       </form>
       <div className="invoice--table">{tableElements}</div>
+
+      <div className="invoice--total">
+        <p>Total amount contributed {totalAmount}</p>
+      </div>
     </div>
   );
 }
