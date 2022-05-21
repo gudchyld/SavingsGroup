@@ -1,2 +1,4 @@
 # SavingsGroup
-Created with CodeSandbox
+
+
+an app to manage a collective money saving and return system
