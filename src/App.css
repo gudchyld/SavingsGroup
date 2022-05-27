@@ -8,6 +8,19 @@
   margin-top: 50px;
 }
 
+.header{
+  margin-left: 80px;
+  margin-top: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header  p {
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
 .Table {
   margin-top: 7px;
   display: flex;
@@ -21,3 +34,12 @@
 .T-2 {
   margin-left: 40px;
 }
+
+.T-3 {
+  margin-left: 40px;
+}
+
+.T-4 {
+  margin-left: 40px;
+}
+

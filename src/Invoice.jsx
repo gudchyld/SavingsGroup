@@ -66,7 +66,15 @@ export default function Invoice() {
 
         <button onClick={updateData}>Save</button>
       </form>
-      <div className="invoice--table">{tableElements}</div>
+
+      
+      <div className="invoice--table">
+        <h3>Summary of investment for 1 week</h3>
+        <div className="header"><p>Amount</p><p>Interest</p><p>Total Amount</p></div>
+
+        {tableElements}
+        
+      </div>
 
       <div className="invoice--total">
         <p>Total amount contributed by participants: {totalAmount}</p>
