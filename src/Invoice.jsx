@@ -41,14 +41,21 @@ export default function Invoice() {
     <div className="invoice">
 
       <h2>Welcome to SavingsGroup</h2>
+      <p>A system to help you save and earn interest</p>
       <form>
         <input
           type="text"
-          placeholder="Name"
+          placeholder="Enter Name"
           name="nameText"
           value={data.nameText}
           onChange={handleChange}
         />
+        <select  name="tier">
+            <option value="choose">Choose Tier</option>
+            <option value="tierOne">Tier 1 - 10,000 Naira</option>
+            <option value="tierTwo">Tier 2 - 20,000 Naira</option>
+            <option value="tierThree">Tier 3 - 30,000 Naira</option>
+          </select>
         <input
           type="text"
           placeholder="Amount"
@@ -62,7 +69,7 @@ export default function Invoice() {
       <div className="invoice--table">{tableElements}</div>
 
       <div className="invoice--total">
-        <p>Total amount contributed by participants {totalAmount}</p>
+        <p>Total amount contributed by participants: {totalAmount}</p>
       </div>
     </div>
   );
