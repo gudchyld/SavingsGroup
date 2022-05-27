@@ -8,8 +8,7 @@ export default function Invoice() {
     amount: ""
   });
 
-  console.log(data);
-
+  
   const [dataBank, setDataBank] = useState([]); //This is the databank
   //console.log(dataBank);
 
@@ -40,6 +39,8 @@ export default function Invoice() {
 
   return (
     <div className="invoice">
+
+      <h2>Welcome to SavingsGroup</h2>
       <form>
         <input
           type="text"
@@ -61,7 +62,7 @@ export default function Invoice() {
       <div className="invoice--table">{tableElements}</div>
 
       <div className="invoice--total">
-        <p>Total amount contributed {totalAmount}</p>
+        <p>Total amount contributed by participants {totalAmount}</p>
       </div>
     </div>
   );
